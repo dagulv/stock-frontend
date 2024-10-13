@@ -9,7 +9,6 @@
 	 * @type {{items: MenuItem[]}}
 	 */
 	const { items = [] } = $props();
-	console.log(items);
 </script>
 
 <aside>
