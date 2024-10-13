@@ -1,4 +1,6 @@
-<script lang="ts">
+<script>
+	// @ts-nocheck
+
 	import * as Card from '$lib/components/ui/card/index.js';
 	import * as Form from '$lib/components/ui/form';
 	import { Input } from '$lib/components/ui/input';
@@ -7,6 +9,9 @@
 	import { loginSchema } from '$lib/schemas';
 	import { api } from '$lib/fetch';
 
+	/**
+	 * @type {Array<string>}
+	 */
 	let errors = $state([]);
 
 	const form = superForm(defaults(zod(loginSchema)), {
